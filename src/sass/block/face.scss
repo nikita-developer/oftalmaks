@@ -1,0 +1,120 @@
+
+.face {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 90px;
+}
+
+.face__product {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    width: 490px;
+    height: 604px;
+    background-image: url("../media/face/product.png");
+    background-repeat: no-repeat;
+    transform: translateX(-50%);
+}
+
+.face__logo {
+    position: relative;
+    width: 138px;
+    height: 32px;
+    margin-bottom: 28px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: center;
+    background-image: url("../media/face/logo-border.png");
+    background-repeat: no-repeat;
+}
+
+.face__box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.face__info {
+    max-width: 308px;
+}
+
+.face__title {
+    margin-bottom: 32px;
+    font-weight: 700;
+
+    & mark {
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        font-family: 'Caveat', sans-serif;
+    }
+}
+
+.face__item {
+    position: relative;
+    padding: 7px 7px 7px 54px;
+    background-color: #fff;
+
+    & + & {
+        margin-top: 14px;
+    }
+}
+
+.face__check {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 40px;
+    height: 40px;
+    background-image: url("../media/face/check.png");
+    background-repeat: no-repeat;
+}
+
+.face__item-description {
+    & span {
+        display: block;
+        font-weight: 700;
+        color: #ff8c8a;
+    }
+}
+
+.face__theAppointment {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-right: -9px;
+    margin-left: -9px;
+}
+
+.face__theAppointment-item {
+    position: relative;
+    padding: 10px 10px 10px 15px;
+    margin-right: 9px;
+    margin-bottom: 12px;
+    margin-left: 9px;
+    background-color: #a0b7b4;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        content: '';
+        background: rgb(254, 145, 127);
+        background: linear-gradient(180deg, rgba(254, 145, 127, 1) 0%, rgba(251, 178, 59, 1) 100%);
+    }
+}
+
+.face__theAppointment-description {
+    font-size: 13px;
+    color: #fff;
+
+    & b {
+        font-family: 600;
+    }
+
+    & span {
+        display: block;
+    }
+}

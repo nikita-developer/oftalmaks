@@ -1,0 +1,37 @@
+
+.section {
+    position: relative;
+
+    &_face {
+        z-index: 1;
+        background-color: transparent;
+        background-image: url("../media/section/face.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    &_cause {
+        margin-top: -170px;
+        background-image: url("../media/section/cause.jpg");
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+}
+
+.section__title {
+    font-size: 64px;
+    line-height: 58px;
+
+    & span {
+        display: block;
+    }
+
+    & mark {
+        display: inline-block;
+        line-height: 62px;
+        color: #0b2349;
+        background: linear-gradient(130deg, #fab730 0%, #ff8c8a 60%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
