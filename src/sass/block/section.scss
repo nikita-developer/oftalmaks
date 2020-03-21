@@ -16,22 +16,90 @@
         background-repeat: no-repeat;
         background-position: center top;
     }
+
+    &_demonstration {
+        margin-top: -80px;
+        background-image: url("../media/section/demonstration.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    &_help {
+        z-index: 1;
+        margin-top: -160px;
+        background-image: url("../media/section/help.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    &_innovation {
+        padding-top: 1015px;
+        padding-bottom: 130px;
+        margin-top: -253px;
+        background-image: url("../media/section/innovation.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    &_ingredients {
+        padding-bottom: 635px;
+        background-image: url("../media/section/ingredients.jpg");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+
+    &_professional {
+        padding-top: 100px;
+        padding-bottom: 80px;
+        background-image: url("../media/section/professional.png");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+
+    &_face-footer {
+        padding-top: 222px;
+        margin-top: -132px;
+        background-image: url("../media/section/face-footer.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
 }
 
 .section__title {
-    font-size: 64px;
-    line-height: 58px;
-
     & span {
         display: block;
     }
 
     & mark {
         display: inline-block;
-        line-height: 62px;
         color: #0b2349;
         background: linear-gradient(130deg, #fab730 0%, #ff8c8a 60%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+}
+
+@media (max-width: 1030px) {
+    .section {
+        &_face {
+            background-image: url("../media/section/face-1030.png");
+            background-position: center bottom;
+        }
+
+        &_cause {
+            margin-top: -67px;
+            background-image: url("../media/section/cause-1030.jpg");
+        }
+
+        &_innovation {
+            padding-top: 500px;
+            margin-top: 0;
+            background-image: url("../media/section/innovation-1030.png");
+        }
+    }
+
+    .section__title {
+        font-size: 36px;
+        line-height: 1;
     }
 }

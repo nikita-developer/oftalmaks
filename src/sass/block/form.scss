@@ -107,3 +107,35 @@
     background: linear-gradient(180deg, rgba(254, 145, 127, 1) 0%, rgba(251, 178, 59, 1) 100%);
     border-radius: 25px;
 }
+
+@media (max-width: 1030px) {
+    .form {
+        max-width: 250px;
+        margin-top: 100px;
+    }
+
+    .form__title {
+        font-size: 22px;
+        line-height: 1;
+    }
+
+    .form__count-item {
+        width: 61px;
+        height: 41px;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+        font-size: 22px;
+        line-height: 41px;
+        background-size: cover;
+
+        & span:last-child {
+            bottom: -16px;
+            font-size: 12px;
+        }
+    }
+
+    .form__field {
+        padding: 10px 16px;
+        border: 1px solid #e8e8e8;
+    }
+}

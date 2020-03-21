@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 310px;
-    padding-bottom: 135px;
+    padding-bottom: 50px;
 }
 
 .cause__info {
@@ -64,5 +64,36 @@
     & mark {
         font-weight: 700;
         color: #ff8c8a;
+    }
+}
+
+@media (max-width: 1030px) {
+    .cause {
+        padding-top: 160px;
+    }
+
+    .cause__info {
+        max-width: 330px;
+    }
+
+    .cause__title {
+        margin-bottom: 20px;
+    }
+
+    .cause__description {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .cause__list {
+        margin-bottom: 30px;
+    }
+
+    .cause__list-item {
+        line-height: 24px;
+    }
+
+    .cause__warning {
+        padding: 15px;
     }
 }

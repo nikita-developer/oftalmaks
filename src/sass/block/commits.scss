@@ -1,0 +1,89 @@
+
+.commits__title {
+    margin-bottom: 15px;
+    font-size: 59px;
+    font-weight: 800;
+    line-height: 59px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.commits__box {
+    display: flex;
+    align-items: flex-start;
+}
+
+.commits__item {
+    position: relative;
+    width: 309px;
+    padding: 2px;
+    background: linear-gradient(130deg, rgba(232, 222, 115, 1) 0%, rgba(233, 109, 107, 1) 100%);
+
+    & + & {
+        margin-left: 37px;
+    }
+
+    &:nth-of-type(2) {
+        margin-top: 42px;
+    }
+}
+
+.commits__border {
+    padding: 20px 20px 30px 20px;
+    background-color: #fff;
+}
+
+.commits__head {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 57px;
+    padding-left: 70px;
+    margin-bottom: 15px;
+}
+
+.commits__face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 57px;
+    height: 57px;
+    background-color: #10459c;
+    border-radius: 2px;
+}
+
+.commits__name {
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.commits__age {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #10459c;
+    text-transform: uppercase;
+}
+
+.commits__description {
+    line-height: 20px;
+}
+
+@media (max-width: 1030px) {
+    .commits__item {
+        & + & {
+            margin-left: 20px;
+        }
+    }
+
+    .commits__border {
+        padding: 20px 10px 30px 10px;
+    }
+
+    .commits__description {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}

@@ -40,7 +40,9 @@
 
 .face__title {
     margin-bottom: 32px;
+    font-size: 64px;
     font-weight: 700;
+    line-height: 58px;
 
     & mark {
         padding-right: 10px;
@@ -116,5 +118,50 @@
 
     & span {
         display: block;
+    }
+}
+
+@media (max-width: 1030px) {
+    .face {
+        padding-bottom: 70px;
+
+        & .face__title {
+            font-size: 46px;
+        }
+    }
+
+    .face__product {
+        left: 51%;
+        width: 320px;
+        height: 395px;
+        background-size: cover;
+    }
+
+    .face__info {
+        max-width: 250px;
+    }
+
+    .face__item-description {
+        font-size: 14px;
+
+        & span {
+            margin-bottom: 5px;
+        }
+    }
+
+    .face__theAppointment {
+        margin-top: 20px;
+        margin-right: -5px;
+        margin-left: -5px;
+    }
+
+    .face__theAppointment-item {
+        padding: 5px 8px 8px 11px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .face__theAppointment-description {
+        font-size: 12px;
     }
 }
