@@ -1,0 +1,28 @@
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .section__title {
+        color: #000 !important;
+        background: transparent !important;
+
+        & mark {
+            color: #000 !important;
+            background: transparent !important;
+        }
+    }
+}
+
+@media not all and (min-resolution: .001dpcm) {
+    @supports (-webkit-appearance:none) {
+        .section__title {
+            color: #000 !important;
+            background: transparent !important;
+            -webkit-text-fill-color: #000 !important;
+
+            & mark {
+                color: #000 !important;
+                background: transparent !important;
+                -webkit-text-fill-color: #000 !important;
+            }
+        }
+    }
+}
