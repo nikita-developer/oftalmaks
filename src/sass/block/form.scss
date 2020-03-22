@@ -103,9 +103,15 @@
     font-weight: 600;
     color: #fff;
     text-align: center;
+    cursor: pointer;
     background: rgb(254, 145, 127);
     background: linear-gradient(180deg, rgba(254, 145, 127, 1) 0%, rgba(251, 178, 59, 1) 100%);
     border-radius: 25px;
+    transition: .3s;
+
+    &:hover {
+        box-shadow: inset 0 0 12px 5px #bb6923;
+    }
 }
 
 @media (max-width: 1030px) {

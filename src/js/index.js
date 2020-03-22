@@ -3,7 +3,7 @@ $(document).ready(function() {
     initializeTimer(); // вызываем функцию инициализации таймера
 
     function initializeTimer() {
-    	var endDate = new Date(2020,2,22,21,21); // получаем дату истечения таймера 1.год,2.месяц-1,3.день,4.часы,5.минуты
+    	var endDate = new Date(2020,2,27,21,21); // получаем дату истечения таймера 1.год,2.месяц-1,3.день,4.часы,5.минуты
     	var currentDate = new Date(); // получаем текущую дату
     	var seconds = (endDate-currentDate) / 1000; // определяем количество секунд до истечения таймера
     	if (seconds > 0) { // проверка - истекла ли дата обратного отсчета
@@ -51,5 +51,10 @@ $(document).ready(function() {
     	clearInterval(timerId); // останавливаем вызов функции через каждую секунду
     }
 
-    new WOW().init();
+    var wow = new WOW(
+        {
+            mobile: false,
+        }
+    );
+wow.init();
 });

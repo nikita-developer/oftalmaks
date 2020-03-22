@@ -10,6 +10,7 @@
     flex-direction: column;
     max-width: 317px;
     height: 610px;
+    transition: .3s;
 
     & + & {
         margin-left: 28px;
@@ -17,6 +18,11 @@
 
     &:nth-child(2) {
         margin-top: 33px;
+    }
+
+    &:hover {
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+        transform: scale(1.01);
     }
 }
 
