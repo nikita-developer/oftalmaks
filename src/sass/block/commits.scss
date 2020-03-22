@@ -87,3 +87,22 @@
         line-height: 18px;
     }
 }
+
+@media (max-width: 768px) {
+    .commits {
+        margin-bottom: 50px;
+    }
+
+    .commits__box {
+        flex-direction: column;
+    }
+
+    .commits__item {
+        width: 100%;
+
+        & + & {
+            margin-top: 15px;
+            margin-left: 0;
+        }
+    }
+}

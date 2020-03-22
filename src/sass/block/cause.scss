@@ -97,3 +97,15 @@
         padding: 15px;
     }
 }
+
+@media (max-width: 768px) {
+    .cause {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .cause__info {
+        max-width: 100%;
+        margin-left: 0;
+    }
+}

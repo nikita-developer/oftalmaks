@@ -60,3 +60,21 @@
         font-size: 14px;
     }
 }
+
+@media (max-width: 768px) {
+    .demonstration {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .demonstration__item {
+        height: auto;
+
+        & + & {
+            margin-top: 20px;
+            margin-left: 0;
+        }
+    }
+}

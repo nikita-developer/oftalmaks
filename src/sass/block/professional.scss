@@ -58,12 +58,13 @@
 
 .professional__media {
     position: absolute;
-    right: -30px;
+    right: 0;
     bottom: -80px;
-    width: 526px;
-    height: 790px;
+    width: 475px;
+    height: 714px;
     background-image: url("../media/professional/doctor.png");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media (max-width: 1030px) {
@@ -72,11 +73,10 @@
     }
 
     .professional__media {
-        bottom: -82px;
+        bottom: -84px;
         width: 370px;
         height: 556px;
-        background-size: cover;
-        transform: rotate(1.2deg);
+        transform: rotate(1.9deg);
     }
 
     .professional__description {
@@ -94,6 +94,30 @@
 
         & span {
             margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .professional {
+        padding-right: 0;
+    }
+
+    .professional__media {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .professional__description {
+        text-align: center;
+
+        & p {
+            font-size: 14px;
+        }
+
+        & mark {
+            font-size: 14px;
         }
     }
 }

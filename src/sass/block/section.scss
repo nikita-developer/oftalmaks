@@ -103,3 +103,68 @@
         line-height: 1;
     }
 }
+
+@media (max-width: 768px) {
+    .section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        &_face {
+            background-image: url("../media/section/face-768.jpg");
+        }
+
+        &_cause {
+            background-image: url("../media/section/cause-768.jpg");
+        }
+
+        &_demonstration {
+            margin-top: 0;
+            background-color: #eef8f8;
+            background-image: none;
+        }
+
+        &_help {
+            margin-top: 0;
+            background: linear-gradient(180deg, #fe917f 0%, #fbb23b 100%);
+        }
+
+        &_innovation {
+            background-image: url("../media/section/innovation-768.jpg");
+        }
+
+        &_ingredients {
+            padding-bottom: 635px;
+            background-image: url("../media/section/ingredients-768.jpg");
+        }
+
+        &_professional {
+            background-image: url("../media/section/professional-768.jpg");
+        }
+    }
+
+    .section__title {
+        font-size: 28px;
+        text-align: center;
+
+        & span {
+            display: inline;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+        &_ingredients {
+            background-image: url("../media/section/ingredients-480.jpg");
+        }
+    }
+
+    .section__title {
+        font-size: 20px;
+    }
+}

@@ -58,3 +58,21 @@
         font-size: 36px;
     }
 }
+
+@media (max-width: 768px) {
+    .innovation {
+        margin-top: 340px;
+    }
+
+    .innovation__border {
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .innovation__description {
+        & p {
+            font-size: 14px;
+        }
+    }
+}

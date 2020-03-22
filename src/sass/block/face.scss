@@ -11,9 +11,9 @@
     left: 50%;
     width: 490px;
     height: 604px;
+    margin-left: -245px;
     background-image: url("../media/face/product.png");
     background-repeat: no-repeat;
-    transform: translateX(-50%);
 }
 
 .face__logo {
@@ -134,6 +134,7 @@
         left: 51%;
         width: 320px;
         height: 395px;
+        margin-left: -160px;
         background-size: cover;
     }
 
@@ -163,5 +164,59 @@
 
     .face__theAppointment-description {
         font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .face {
+        padding-top: 0;
+        padding-bottom: 0;
+
+        & .face__title {
+            margin-bottom: 450px;
+            font-size: 38px;
+
+            & span {
+                display: inline-block;
+            }
+        }
+    }
+
+    .face__product {
+        top: 170px;
+        bottom: auto;
+        left: 50%;
+    }
+
+    .face__box {
+        flex-direction: column;
+    }
+
+    .face__info {
+        max-width: 100%;
+    }
+
+    .face__item {
+        box-shadow: 0 0 10px 0 #f3f3f3;
+    }
+
+    .face__theAppointment {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .face {
+        & .face__title {
+            margin-bottom: 330px;
+            font-size: 28px;
+        }
+    }
+
+    .face__product {
+        top: 145px;
+        width: 230px;
+        height: 283px;
+        margin-left: -115px;
     }
 }
