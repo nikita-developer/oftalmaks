@@ -90,11 +90,28 @@
     }
 }
 
+.form__label {
+    padding-bottom: 5px;
+    padding-left: 15px;
+    font-weight: 600;
+}
+
 .form__field {
     width: 100%;
     padding: 15px 25px;
     border: 2px solid #e8e8e8;
     border-radius: 25px;
+}
+
+.form__selcet {
+    appearance: none;
+    background-image: url("../media/form/arrow.png");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 25px) center;
+
+    &:focus {
+        outline: none;
+    }
 }
 
 .form__btn {

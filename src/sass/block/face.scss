@@ -219,4 +219,23 @@
         height: 283px;
         margin-left: -115px;
     }
+
+    .face__theAppointment {
+        flex-direction: column;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .face__theAppointment-item {
+        width: 100%;
+        padding: 10px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .face__theAppointment-description {
+        & span {
+            display: inline;
+        }
+    }
 }

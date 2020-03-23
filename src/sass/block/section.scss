@@ -5,13 +5,13 @@
     &_face {
         z-index: 1;
         background-color: transparent;
-        background-image: url("../media/section/face.png");
+        background-image: url("../media/section/face-footer.png");
         background-repeat: no-repeat;
-        background-position: center top;
+        background-position: center bottom;
     }
 
     &_cause {
-        margin-top: -170px;
+        margin-top: -130px;
         background-image: url("../media/section/cause.jpg");
         background-repeat: no-repeat;
         background-position: center top;
@@ -61,7 +61,7 @@
         margin-top: -132px;
         background-image: url("../media/section/face-footer.png");
         background-repeat: no-repeat;
-        background-position: center top;
+        background-position: center bottom;
     }
 }
 
@@ -158,6 +158,10 @@
     .section {
         padding-top: 25px;
         padding-bottom: 25px;
+
+        &_face {
+            background-size: cover;
+        }
 
         &_ingredients {
             background-image: url("../media/section/ingredients-480.jpg");
