@@ -34,14 +34,12 @@
 
     &_innovation {
         padding-top: 1015px;
-        padding-bottom: 130px;
+        padding-bottom: 65px;
         margin-top: -253px;
-        background-image: url("../media/section/innovation.png");
-        background-repeat: no-repeat;
-        background-position: center top;
     }
 
     &_ingredients {
+        padding-top: 65px;
         padding-bottom: 635px;
         background-image: url("../media/section/ingredients.jpg");
         background-repeat: no-repeat;
@@ -79,6 +77,57 @@
     }
 }
 
+.section__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../media/section/innovation_bg-blur.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+}
+
+.section__linz-left {
+    position: absolute;
+    top: 430px;
+    left: 50%;
+    width: 256px;
+    height: 207px;
+    margin-left: -298px;
+    background-image: url("../media/section/innovation_bg-perfect.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    border-radius: 20px 467px 573px 326px;
+}
+
+.section__linz-right {
+    position: absolute;
+    top: 430px;
+    left: 50%;
+    width: 256px;
+    height: 207px;
+    margin-left: 40px;
+    background-image: url("../media/section/innovation_bg-perfect.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    border-radius: 319px 251px 319px 436px;
+}
+
+.section__bg-glasses {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../media/section/innovation_bg-glasses.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
 @media (max-width: 1030px) {
     .section {
         &_face {
@@ -93,14 +142,31 @@
 
         &_innovation {
             padding-top: 500px;
-            margin-top: 0;
-            background-image: url("../media/section/innovation-1030.png");
+            margin-top: -100px;
         }
     }
 
     .section__title {
         font-size: 36px;
         line-height: 1;
+    }
+
+    .section__bg {
+        background-position: center -200px;
+    }
+
+    .section__linz-left {
+        top: 230px;
+        background-position: center -200px;
+    }
+
+    .section__linz-right {
+        top: 230px;
+        background-position: center -200px;
+    }
+
+    .section__bg-glasses {
+        background-position: center -200px;
     }
 }
 
@@ -130,10 +196,6 @@
             background: linear-gradient(180deg, #fe917f 0%, #fbb23b 100%);
         }
 
-        &_innovation {
-            background-image: url("../media/section/innovation-768.jpg");
-        }
-
         &_ingredients {
             padding-bottom: 635px;
             background-image: url("../media/section/ingredients-768.jpg");
@@ -152,6 +214,29 @@
             display: inline;
         }
     }
+
+    .section__bg {
+        background-image: url("../media/section/innovation_bg-blur-768.jpg");
+        background-position: center bottom;
+    }
+
+    .section__linz-left {
+        top: 558px;
+        background-image: url("../media/section/innovation_bg-perfect-768.jpg");
+        background-position: center bottom;
+        border-radius: 20px 467px 573px 326px;
+    }
+
+    .section__linz-right {
+        top: 558px;
+        background-image: url("../media/section/innovation_bg-perfect-768.jpg");
+        background-position: center bottom;
+    }
+
+    .section__bg-glasses {
+        background-image: url("../media/section/innovation_bg-glasses-768.png");
+        background-position: center bottom;
+    }
 }
 
 @media (max-width: 480px) {
@@ -166,9 +251,51 @@
         &_ingredients {
             background-image: url("../media/section/ingredients-480.jpg");
         }
+
+        &_innovation {
+            background-image: url("../media/section/innovation-480.jpg");
+            background-repeat: no-repeat;
+            background-position: center bottom;
+        }
     }
 
     .section__title {
         font-size: 20px;
     }
+
+    .section__bg {
+        display: none;
+    }
+
+    .section__linz-left {
+        display: none;
+    }
+
+    .section__linz-right {
+        display: none;
+    }
+
+    .section__bg-glasses {
+        display: none;
+    }
 }
+
+// проблемы с прокруткой фона блока innovation в ie
+// @supports (-ms-ime-align:auto) {
+//     .section {
+//         &_innovation {
+//             height: 100%;
+//             overflow: hidden;
+//         }
+//     }
+// }
+//
+// // для Ie 10/11
+// @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+//     .section {
+//         &_innovation {
+//             height: 100%;
+//             overflow: hidden;
+//         }
+//     }
+// }

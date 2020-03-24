@@ -4,7 +4,6 @@
     padding: 2px;
     background: linear-gradient(130deg, rgba(232, 222, 115, 1) 0%, rgba(233, 109, 107, 1) 100%);
     border-radius: 5px;
-    box-shadow: 7px 7px 23px #ececec;
 }
 
 .innovation__border {
@@ -61,7 +60,8 @@
 
 @media (max-width: 768px) {
     .innovation {
-        margin-top: 340px;
+        margin-top: 0;
+        margin-bottom: 340px;
     }
 
     .innovation__border {

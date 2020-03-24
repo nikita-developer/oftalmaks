@@ -88,11 +88,16 @@ button {
     outline: none;
 }
 
+html {
+    background: #f0f0f0 !important;
+}
+
 body {
     font-family: 'Montserrat', sans-serif, Tahoma, Verdana;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.2;
+    background: #f0f0f0 !important;
 }
 
 article,
