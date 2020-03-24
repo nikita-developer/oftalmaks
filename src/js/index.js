@@ -57,4 +57,8 @@ $(document).ready(function() {
         }
     );
     wow.init();
+
+    setTimeout(function() {
+        $('body').addClass('loaded');
+    }, 600);
 });
