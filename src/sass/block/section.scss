@@ -253,7 +253,7 @@
         }
 
         &_innovation {
-            background-image: url("../media/section/innovation-480.jpg");
+            background-image: url("../media/section/innovation_bg-480.jpg");
             background-repeat: no-repeat;
             background-position: center bottom;
         }
@@ -279,23 +279,3 @@
         display: none;
     }
 }
-
-// проблемы с прокруткой фона блока innovation в ie
-// @supports (-ms-ime-align:auto) {
-//     .section {
-//         &_innovation {
-//             height: 100%;
-//             overflow: hidden;
-//         }
-//     }
-// }
-//
-// // для Ie 10/11
-// @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-//     .section {
-//         &_innovation {
-//             height: 100%;
-//             overflow: hidden;
-//         }
-//     }
-// }
