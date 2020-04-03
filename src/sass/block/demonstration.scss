@@ -50,6 +50,7 @@
 
 @media (max-width: 1030px) {
     .demonstration__item {
+        max-width: 227px;
         height: 448px;
     }
 
@@ -75,6 +76,7 @@
     }
 
     .demonstration__item {
+        max-width: 317px;
         height: auto;
 
         & + & {

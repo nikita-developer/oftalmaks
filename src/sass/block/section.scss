@@ -12,13 +12,15 @@
 
     &_cause {
         margin-top: -130px;
+        background-color: #fff;
         background-image: url("../media/section/cause.jpg");
         background-repeat: no-repeat;
         background-position: center top;
     }
 
     &_demonstration {
-        margin-top: -80px;
+        margin-top: -40px;
+        background-color: #fff;
         background-image: url("../media/section/demonstration.png");
         background-repeat: no-repeat;
         background-position: center top;
@@ -36,11 +38,13 @@
         padding-top: 1015px;
         padding-bottom: 65px;
         margin-top: -253px;
+        overflow: hidden;
     }
 
     &_ingredients {
         padding-top: 65px;
         padding-bottom: 635px;
+        background-color: #fff;
         background-image: url("../media/section/ingredients.jpg");
         background-repeat: no-repeat;
         background-position: center bottom;
@@ -179,6 +183,7 @@
 
         &_face {
             background-image: url("../media/section/face-768.jpg");
+            background-size: cover;
         }
 
         &_cause {
@@ -221,14 +226,16 @@
     }
 
     .section__linz-left {
-        top: 558px;
+        top: auto;
+        bottom: 120px;
         background-image: url("../media/section/innovation_bg-perfect-768.jpg");
         background-position: center bottom;
         border-radius: 20px 467px 573px 326px;
     }
 
     .section__linz-right {
-        top: 558px;
+        top: auto;
+        bottom: 120px;
         background-image: url("../media/section/innovation_bg-perfect-768.jpg");
         background-position: center bottom;
     }
